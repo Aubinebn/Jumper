@@ -22,8 +22,6 @@ public class Parallax : MonoBehaviour
         transform.position = new Vector3(initialPosition.x + dist, initialPosition.y, initialPosition.z);
         
         
-        Debug.Log("temp " + temp);
-        Debug.Log("position " + initialPosition.x + width);
         if (temp > initialPosition.x + width)
             initialPosition.x += width;
         else if (temp < initialPosition.x - width)
